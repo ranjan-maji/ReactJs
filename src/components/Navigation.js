@@ -11,7 +11,7 @@ const Navigation = () => {
   return (
     <>
         
-        <nav className="container mx-auto items-center flex justify-between py-4">
+        <nav style={{padding:30}} className="container mx-auto items-center flex justify-between py-4">
 
         
             <Link to = "/">
