@@ -5,13 +5,13 @@ const Navigation = () => {
     const cartStyle = {
         background: '#F59E0D',
         display: 'flex',
-        padding: '6px 12px',
-        borderRadius: '50px'
+        padding: '4px 5px',
+        borderRadius: '20px'
     }
   return (
     <>
         
-        <nav style={{padding:30}} className="container mx-auto items-center flex justify-between py-4">
+        <nav style={{padding:30}} className="container mx-auto flex items-center justify-between py-4">
 
         
             <Link to = "/">
