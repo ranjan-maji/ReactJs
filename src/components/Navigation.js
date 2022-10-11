@@ -20,6 +20,7 @@ const Navigation = () => {
             <ul className="flex items-center">
                 <li><Link to="/">Home</Link></li>
                 <li className="ml-6"><Link to="/products">Products</Link></li>
+                <li className="ml-6"><Link to="/login">Login</Link></li>
                 <li className="ml-6">
                     <Link to="/cart">
                         <div style={cartStyle}>
@@ -27,6 +28,7 @@ const Navigation = () => {
                             <img className="ml-2" src="/images/cart.png" alt="cart-icon" />
                         </div>
                     </Link>
+                    
                 </li>
             </ul>
         </nav>
