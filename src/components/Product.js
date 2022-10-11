@@ -1,10 +1,10 @@
-const Product = () => {
+const Product = ({img = "/images/peproni.png" , name = "Havana special", size ="Small"} ) => {
   return (
     <div>
-        <img src="/images/peproni.png" alt="pizza" />
+        <img src={img} alt="pizza" />
         <div className="text-center">
-            <h2 className="text-lg font-bold py-2">Havana special</h2>
-            <span className="bg-gray-200 py-1 rounded-full text-sm px-4">Small</span>
+            <h2 className="text-lg font-bold py-2">{name}</h2>
+            <span className="bg-gray-200 py-1 rounded-full text-sm px-4">{size}</span>
         </div>
         <div className="flex justify-between item-center mt-4">
             <span>₹ 500</span>

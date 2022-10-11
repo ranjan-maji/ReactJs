@@ -1,7 +1,9 @@
 import Product from './Product';
 import { useState } from 'react';
 
-
+// import cart from '../../public/images/cart.png'
+// import logo from '../../public/images/logo.png'
+// import logo from '../'
 const Products = () => {
 const [product, setProducts] = useState([]);
 
