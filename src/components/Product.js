@@ -1,6 +1,9 @@
+
+import '../css/a.css'
 const Product = ({img = "/images/peproni.png" , name = "Havana special", size ="Small"} ) => {
   return (
     <div>
+    <div className='jay'>uytuytuy</div>
         <img src={img} alt="pizza" />
         <div className="text-center">
             <h2 className="text-lg font-bold py-2">{name}</h2>
