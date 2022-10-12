@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 const Navigation = () => {
@@ -8,6 +8,9 @@ const Navigation = () => {
         padding: '4px 5px',
         borderRadius: '20px'
     }
+
+
+    const navigation = useNavigate()
   return (
     <>
         
@@ -17,18 +20,20 @@ const Navigation = () => {
             <Link to = "/">
                 <img style={{ height: 45}} src="/images/logo.png" alt="logo" />
             </Link>
-            <ul className="flex items-center">
-                <li><Link to="/">Home</Link></li>
-                <li className="ml-6"><Link to="/products">Products</Link></li>
-                <li className="ml-6">
-                    <Link to="/cart">
-                        <div style={cartStyle}>
+            <div style={{padding:20}} className="flex items-center">
+                <div style={{ cursor :"pointer", marginRight:20 }} onClick = {()=>{navigation('/')}}>Home</div>
+
+                <div style={ { cursor :"pointer", marginRight:20 }} onClick = {()=>{navigation('products')}}>Products</div>
+                
+                <div style={ { cursor :"pointer", marginRight:20 }} onClick = {()=>{navigation('login')}}>Login</div>
+                
+                <div style={ { cursor :"pointer", marginRight:20 }} onClick = {()=>{navigation('cart')}}><div style={cartStyle}>
                             <span>10</span>
                             <img className="ml-2" src="/images/cart.png" alt="cart-icon" />
                         </div>
-                    </Link>
-                </li>
-            </ul>
+                        </div>
+                
+            </div>
         </nav>
 
     </>

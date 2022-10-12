@@ -1,3 +1,5 @@
+
+//import '../css/a.css'
 const Product = ({img = "/images/peproni.png" , name = "Havana special", size ="Small"} ) => {
   return (
     <div>
